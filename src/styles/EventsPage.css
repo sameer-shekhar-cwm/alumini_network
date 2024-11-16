@@ -1,0 +1,95 @@
+/* Base Event Styles */
+.events-page {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7fafc;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Page title with Libre Baskerville font and increased font size */
+.page-title {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #570306; /* Color for page title */
+  font-family: 'Libre Baskerville', serif; /* Apply Libre Baskerville font */
+  font-size: 2.5em; /* Increased font size to 2.5em (~40px) */
+}
+
+/* Page description with the same font as the page title */
+.page-description {
+  text-align: center;
+  color: #0047AB; /* Color for page description */
+  margin-bottom: 40px;
+  font-size: 1.1em;
+}
+
+/* Upcoming Event Cards */
+.upcoming-event-card {
+  background-color: #ffffff; /* White background for the card */
+  color: #0047AB; /* Blue text color for titles */
+  border: 2px solid #0047AB; /* Blue border for the card */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.upcoming-event-card:hover {
+  transform: scale(1.05); /* Hover effect */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.upcoming-event-card h3 {
+  color: #0047AB; /* Blue color for the event title */
+  margin-bottom: 10px;
+  font-size: 1.4em;
+}
+
+.upcoming-event-card p {
+  color: #333; /* Darker color for the date and location text */
+  margin: 5px 0;
+}
+
+/* Regular Event Cards */
+.event-card {
+  background-color: #ffffff; /* White background for the card */
+  border: 2px solid #0047AB; /* Blue border for the card */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.02);
+}
+
+.event-card h3 {
+  color: #0047AB; /* Blue color for the event title */
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  color: #666; /* Lighter color for the date and location text */
+  margin: 5px 0;
+}
+
+/* Register Button */
+.register-btn {
+  padding: 10px 20px;
+  background-color: #832264;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.register-btn:hover {
+  background-color: #6a1b47; /* Darker shade for hover */
+  transform: scale(1.05);
+}

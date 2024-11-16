@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f1eb, #a6a1eb);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite; /* Animation for smooth background transition */
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Login Container */
+.login-container {
+  background: #fff;
+  padding: 40px;
+  width: 380px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: box-shadow 0.3s;
+}
+
+/* Hover Effect on Container */
+.login-container:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styling with Libre Baskerville font */
+.login-container h2 {
+  color: #570306;
+  font-size: 2.5em; /* Increased font size */
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Libre Baskerville', serif; /* Apply Libre Baskerville font */
+}
+
+/* Subtext Styling */
+.subtext {
+  color: #777;
+  font-size: 1em;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+/* Tabs Styling */
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.tab {
+  padding: 12px 0;
+  width: 50%;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #832264; /* New color for the tabs */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.tab .icon {
+  font-size: 1.4em;
+  margin-bottom: 5px;
+}
+
+/* Active Tab Styling */
+.tab.active {
+  color: #B15B8D; /* White color for active tab text */
+  border-bottom: 3px solid #832264; /* Same color for active tab's underline */
+}
+
+/* Login Form Styling */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input Fields Styling */
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+/* Focus Effect on Input Fields */
+.login-form input:focus {
+  border-color: #F7A1C9; /* Soft pink border on focus */
+  outline: none;
+}
+
+/* Button Styling */
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #832264; /* New button color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+}
+
+/* Button Hover Effect */
+.login-form button:hover {
+  background-color: #7f6c7a; /* Darker shade of #967e8d on hover */
+}

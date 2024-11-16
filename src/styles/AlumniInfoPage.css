@@ -1,0 +1,136 @@
+/* Global reset and font setup */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Apply a soft gradient to the background */
+body {
+  background: linear-gradient(135deg, #f5f6f7, #e7e4db); /* Light background gradient */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  font-size: 16px; /* Base font size */
+  line-height: 1.6; /* Comfortable line height */
+}
+
+/* AlumniInfoPage-specific styles */
+.alumni-info-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  width: 100%;
+  max-width: 1200px; /* Limit max width for a centered look */
+  flex-grow: 1;
+  margin: auto;
+}
+
+/* Page title with Libre Baskerville font and shadow effect */
+.page-title {
+  font-size: 2.5em; /* Increased to ~40px */
+  font-weight: 700;
+  font-family: 'Libre Baskerville', serif; /* Apply Libre Baskerville font */
+  color: #d52008; /* Dark blue color */
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 10px 25px;
+  border-radius: 12px;
+  letter-spacing: 2px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for elegance */
+  background: rgba(255, 255, 255, 0.15); /* Slight overlay background */
+}
+
+/* Center the card container and apply spacing */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center-align cards */
+  width: 100%;
+  max-width: 1000px; /* Limit width for cleaner layout */
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Alumni card styling with refined shadow and transition */
+.alumni-card {
+  background-color: #1f2f3a;
+  width: 250px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Softer shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  color: #ffffff;
+}
+
+.alumni-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Profile image styling with border */
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #ff8a00;
+}
+
+/* Alumni card name styling */
+.alumni-card h3 {
+  font-size: 1.25em; /* ~20px */
+  color: #ff8a00; /* Accent color for names */
+  margin: 10px 0;
+}
+
+/* Alumni position and email styling */
+.position {
+  color: #e0e0e0;
+  font-size: 1em; /* 16px, consistent with body font size */
+  margin-bottom: 8px;
+}
+
+.email {
+  color: #b0b0b0;
+  font-size: 0.9em; /* Slightly smaller than body text, ~14px */
+  margin-bottom: 15px;
+}
+
+/* Social icons styling */
+.social-icons a {
+  color: #ff8a00;
+  font-size: 1.2em; /* ~19px */
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #e52e71;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2.3em; /* Adjusted to ~37px for smaller screens */
+  }
+
+  .alumni-card h3 {
+    font-size: 1.15em; /* ~18px */
+  }
+
+  .position, .email {
+    font-size: 0.9em; /* ~14px */
+  }
+
+  .social-icons a {
+    font-size: 1.1em; /* ~17.6px */
+  }
+}
